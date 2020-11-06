@@ -18,7 +18,6 @@ public class Main {
         ApiResponse<People> parsedResponse = parser.readValue(response.asString(), new TypeReference<ApiResponse<People>>() {});
         for (People person : parsedResponse.getResults()) {
             System.out.printf("%s has a height of %s\n",  person.getName(), person.getHeight());
-            //Cambio
         }
     }
 }
